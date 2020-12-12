@@ -1,5 +1,99 @@
 @import "variables";
-.contact {
-	min-height: 100vh;
-	background-image: url("https://images.unsplash.com/photo-1544273677-c433136021d4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
+@import "animations";
+.contacts {
+	display: flex;
+	position: absolute;
+	animation: squeezeOut 0.3s cubic-bezier(0.92, 1.06, 0.31, 1.84);
+	animation-fill-mode: both;
+	top: 10rem;
+	right: 6rem;
+	flex-direction: column;
+	background-color: $light-grey;
+	box-shadow: $shadow-subtle;
+	border-radius: 3px;
+	opacity: 0.8;
+	&__item {
+		padding: 1rem;
+		margin: 1rem;
+		position: relative;
+		text-decoration: none;
+	}
+	&__item .MuiSvgIcon-root {
+		font-size: 4.5rem;
+		transition: all 0.2s cubic-bezier(0.92, 1.06, 0.31, 1.84);
+		color: $purple;
+		cursor: pointer;
+	}
+	&__item .MuiSvgIcon-root:hover {
+		opacity: 1;
+		transform: translateY(-3px);
+		filter: drop-shadow($shadow-subtle);
+	}
+	&__item--1 .MuiSvgIcon-root:hover {
+		color: $orange;
+	}
+	&__item--2 .MuiSvgIcon-root:hover {
+		color: $github-dark;
+	}
+	&__item--3 .MuiSvgIcon-root:hover {
+		color: $insta-pink;
+	}
+	&__item--4 .MuiSvgIcon-root:hover {
+		color: $twitter-blue;
+	}
+	&__item--1 .MuiSvgIcon-root:hover + &__item-overlay {
+		display: block;
+	}
+	&__item--2 .MuiSvgIcon-root:hover + &__item-overlay {
+		display: block;
+	}
+	&__item--3 .MuiSvgIcon-root:hover + &__item-overlay {
+		display: block;
+	}
+	&__item--4 .MuiSvgIcon-root:hover + &__item-overlay {
+		display: block;
+	}
+	&__item--5 img:hover + &__item-overlay {
+		display: block;
+	}
+
+	&__item img {
+		filter: invert(10%) sepia(89%) saturate(5825%) hue-rotate(279deg)
+			brightness(76%) contrast(112%);
+		cursor: pointer;
+	}
+	&__item img:hover {
+		transition: all 0.2s;
+		filter: invert(53%) sepia(54%) saturate(684%) hue-rotate(193deg)
+			brightness(95%) contrast(79%) drop-shadow($shadow-subtle);
+		transform: translateY(-3px);
+	}
+	&__item-overlay {
+		position: absolute;
+		display: none;
+		animation: dashOut 0.3s cubic-bezier(0.92, 1.06, 0.31, 1.84);
+		top: 50%;
+		left: -16rem;
+		transform: translateY(-50%);
+		color: $white;
+		font-size: 1.5rem;
+		background-color: $github-dark;
+		opacity: 0.95;
+		padding: 0.75rem 1.25rem;
+		border-radius: 3px;
+		filter: drop-shadow($shadow-heavy);
+		.triangle {
+			padding: 0.6rem;
+			background-color: $github-dark;
+			clip-path: polygon(100% 50%, 0 0, 0 100%);
+			border-radius: 2px;
+			position: absolute;
+			bottom: 50%;
+			right: 0;
+			transform: translate(100%, 50%);
+		}
+	}
+}
+.hidden {
+	display: none;
 }

@@ -8,7 +8,7 @@ const Home = () => {
 			<Nav />
 			<div className="center">
 				<div className="center__title">
-					Hey, this is <span class="name">MaHesh</span>
+					Hey, this is <span className="name">MaHesh</span>
 				</div>
 				<div className="center__description">
 					Trying to put a smile on everyone's face.
