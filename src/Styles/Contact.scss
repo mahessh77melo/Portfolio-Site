@@ -64,8 +64,8 @@
 	}
 	&__item img:hover {
 		transition: all 0.2s;
-		filter: invert(53%) sepia(54%) saturate(684%) hue-rotate(193deg)
-			brightness(95%) contrast(79%) drop-shadow($shadow-subtle);
+		filter: invert(16%) sepia(7%) saturate(588%) hue-rotate(174deg)
+			brightness(100%) contrast(93%) drop-shadow($shadow-subtle);
 		transform: translateY(-3px);
 	}
 	&__item-overlay {
