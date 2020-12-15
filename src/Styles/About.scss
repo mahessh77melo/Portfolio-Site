@@ -26,11 +26,20 @@
 			font-size: 4rem;
 			color: $github-dark;
 			padding: 2rem;
+			animation-fill-mode: both;
+			animation: descend 0.5s ease-in;
 		}
 		&--content {
 			font-size: 1.8rem;
 			color: $dark-grey;
+			animation-fill-mode: both;
 			padding: 1rem;
+			animation: ascend 0.6s ease-out;
+
+			&:last-child {
+				animation-delay: 0.5s;
+				animation-fill-mode: backwards;
+			}
 		}
 	}
 	&__right {
@@ -44,7 +53,9 @@
 			height: 25rem;
 			width: 25rem;
 			font-size: 4rem;
+			animation-fill-mode: both;
 			filter: drop-shadow($shadow-heavy);
+			animation: fadeInFromLeft 0.6s ease-in;
 		}
 		.MuiAvatar-img {
 			object-fit: cover;
@@ -54,7 +65,9 @@
 		.name {
 			font-size: 7rem;
 			text-shadow: $shadow-heavy;
+			animation-fill-mode: both;
 			color: $white;
+			animation: fadeInFromRight 0.6s ease-in;
 		}
 	}
 }

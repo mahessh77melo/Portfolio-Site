@@ -24,3 +24,43 @@
 		width: 100%;
 	}
 }
+@keyframes descend {
+	0% {
+		transform: translateY(-2rem);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+@keyframes ascend {
+	0% {
+		transform: translateY(2rem);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+@keyframes fadeInFromLeft {
+	0% {
+		transform: translateX(-2rem);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes fadeInFromRight {
+	0% {
+		transform: translateX(2rem);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}

@@ -4,6 +4,7 @@
 	display: flex;
 	position: absolute;
 	animation: squeezeOut 0.3s cubic-bezier(0.92, 1.06, 0.31, 1.84);
+	transform-origin: top;
 	animation-fill-mode: both;
 	top: 10rem;
 	right: 6rem;
