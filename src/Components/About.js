@@ -24,6 +24,7 @@ const About = () => {
 				<div className="about__right">
 					<Avatar
 						className="about__right--pic"
+						// google profile pic
 						src="https://lh3.googleusercontent.com/urNa4OPPF0YZ8k0oWsDp4Ocbp0Hz8AHHiM9EyNeBgc9scee-W6qApAzdkop03ZH_-o6wLynfj9Y7A7pOpOxeM9Lo8RXAwooSGt_n5o4QkT0eeuU_dQ1GDnYsxW45YK-PcknhIYcVYw=w2400"
 						alt="Mahesh"
 					/>

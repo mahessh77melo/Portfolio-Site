@@ -10,12 +10,15 @@ const Contact = () => {
 		// function
 		console.log(element.querySelector(".contacts__item-overlay"));
 		const text = element.innerText;
+		// creating a text-area and inserting the text into it
 		const textField = document.createElement("textarea");
 		textField.innerText = text;
 		document.body.appendChild(textField);
 		textField.select();
 		textField.setSelectionRange(0, 99999);
+		//  this method copies the selected content
 		document.execCommand("copy");
+		// use and throw
 		document.body.removeChild(textField);
 	};
 	return (
