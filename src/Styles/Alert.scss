@@ -1,0 +1,27 @@
+@import "variables";
+@import "animations";
+.alert {
+	display: flex;
+	position: absolute;
+	bottom: 10vh;
+	left: 50%;
+	animation: alertOut 0.75s ease;
+	animation-fill-mode: forwards;
+	transform: translate(-50%, -50%);
+	background-color: $github-dark;
+	opacity: 0.85;
+	padding: 1rem;
+	border-radius: 5px;
+	color: $trans-white;
+	&__text {
+		font-size: 1.8rem;
+		padding: 0 1rem;
+	}
+	&__exit {
+		font-size: 1.8rem;
+		cursor: pointer;
+		&:hover {
+			color: $dark-red;
+		}
+	}
+}

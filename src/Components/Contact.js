@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import DescriptionIcon from "@material-ui/icons/Description";
 import "../Styles/Contact.scss";
+import Alert from "./Alert";
 
 const Contact = () => {
+	const [showAlert, setShowAlert] = useState(false);
 	const copyToClipboard = (element) => {
 		// function
 		console.log(element.querySelector(".contacts__item-overlay"));
@@ -20,6 +22,7 @@ const Contact = () => {
 		document.execCommand("copy");
 		// use and throw
 		document.body.removeChild(textField);
+		setShowAlert(true);
 	};
 	return (
 		<div className="contacts">
@@ -76,6 +79,7 @@ const Contact = () => {
 					<span className="triangle"></span>
 				</div>
 			</div>
+			{showAlert ? <Alert text={"Copied to Clipboard"} /> : ""}
 		</div>
 	);
 };

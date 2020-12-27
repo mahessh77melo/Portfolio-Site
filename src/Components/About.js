@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/About.scss";
 import Avatar from "@material-ui/core/Avatar";
+import Alert from "./Alert";
 
 const About = () => {
 	return (
@@ -33,6 +34,7 @@ const About = () => {
 					</div>
 				</div>
 			</div>
+			<Alert text={"this is an alert"} />
 		</div>
 	);
 };
