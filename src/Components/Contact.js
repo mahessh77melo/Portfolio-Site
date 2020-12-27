@@ -3,6 +3,7 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import DescriptionIcon from "@material-ui/icons/Description";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import "../Styles/Contact.scss";
 import Alert from "./Alert";
 
@@ -44,6 +45,15 @@ const Contact = () => {
 				<div className="contacts__item-overlay contacts__item-overlay-2">
 					mahessh77melo
 					<span className="triangle"></span>
+				</div>
+			</a>
+			<a
+				href="https://www.linkedin.com/in/magesh-j-melo/"
+				className="contacts__item contacts__item--6"
+			>
+				<LinkedInIcon />
+				<div className="contacts__item-overlay contacts__item-overlay-6">
+					Magesh J<span className="triangle"></span>
 				</div>
 			</a>
 			<div

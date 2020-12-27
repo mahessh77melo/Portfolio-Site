@@ -13,14 +13,16 @@
 	box-shadow: $shadow-subtle;
 	border-radius: 3px;
 	opacity: 0.8;
+
 	&__item {
-		padding: 1rem;
+		padding: 0.75rem;
 		margin: 1rem;
 		position: relative;
 		text-decoration: none;
 	}
+
 	&__item .MuiSvgIcon-root {
-		font-size: 4.5rem;
+		font-size: 4rem;
 		transition: all 0.2s cubic-bezier(0.92, 1.06, 0.31, 1.84);
 		color: $purple;
 		cursor: pointer;
@@ -30,6 +32,7 @@
 		transform: translateY(-3px);
 		filter: drop-shadow($shadow-subtle);
 	}
+
 	&__item--1 .MuiSvgIcon-root:hover {
 		color: $orange;
 	}
@@ -42,16 +45,11 @@
 	&__item--4 .MuiSvgIcon-root:hover {
 		color: $twitter-blue;
 	}
-	&__item--1 .MuiSvgIcon-root:hover + &__item-overlay {
-		display: block;
+	&__item--6 .MuiSvgIcon-root:hover {
+		color: $linkedin-blue;
 	}
-	&__item--2 .MuiSvgIcon-root:hover + &__item-overlay {
-		display: block;
-	}
-	&__item--3 .MuiSvgIcon-root:hover + &__item-overlay {
-		display: block;
-	}
-	&__item--4 .MuiSvgIcon-root:hover + &__item-overlay {
+
+	&__item .MuiSvgIcon-root:hover + &__item-overlay {
 		display: block;
 	}
 	&__item--5 img:hover + &__item-overlay {
@@ -69,6 +67,7 @@
 			brightness(100%) contrast(93%) drop-shadow($shadow-subtle);
 		transform: translateY(-3px);
 	}
+
 	&__item-overlay {
 		position: absolute;
 		display: none;
@@ -83,6 +82,7 @@
 		padding: 0.75rem 1.25rem;
 		border-radius: 3px;
 		filter: drop-shadow($shadow-heavy);
+
 		.triangle {
 			padding: 0.6rem;
 			background-color: $github-dark;
