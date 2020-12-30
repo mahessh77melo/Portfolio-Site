@@ -1,4 +1,50 @@
+@import "variables";
+@import "animations";
 .projects {
 	min-height: 100vh;
 	background-image: url("https://images.unsplash.com/photo-1544273677-c433136021d4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 6rem;
+}
+
+.project {
+	background-color: $trans-white;
+	border-radius: 3px;
+	padding: 2rem;
+	margin: 2rem;
+	font-size: 1.6rem;
+	box-shadow: $shadow-subtle;
+	display: grid;
+	grid-template-rows: 1.5fr 1fr;
+	grid-template-columns: 5fr 1fr;
+
+	&__title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		grid-row: 1/2;
+	}
+	&__domain {
+		grid-row: 1/2;
+		font-size: 2rem;
+	}
+	&__link {
+		.MuiSvgIcon-root {
+			font-size: 3rem;
+			color: $github-dark;
+			filter: drop-shadow($shadow-subtle);
+		}
+	}
+
+	&__tools {
+		grid-row: 2/3;
+		display: flex;
+		color: $dark-grey;
+
+		&-item {
+			padding-right: 1rem;
+		}
+	}
 }

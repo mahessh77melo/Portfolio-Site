@@ -1,3 +1,4 @@
+// re-usable animations
 @keyframes squeezeOut {
 	0% {
 		transform: scaleY(0.1);
@@ -64,6 +65,8 @@
 		opacity: 1;
 	}
 }
+
+// specific for the alert window
 @keyframes alertOut {
 	0% {
 		opacity: 0;
