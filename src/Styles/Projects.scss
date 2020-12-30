@@ -1,5 +1,6 @@
 @import "variables";
 @import "animations";
+
 .projects {
 	min-height: 100vh;
 	background-image: url("https://images.unsplash.com/photo-1544273677-c433136021d4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
@@ -18,6 +19,7 @@
 	margin: 2rem;
 	box-shadow: $shadow-subtle;
 	display: grid;
+	transition: all 0.2s ease-in;
 	grid-template-rows: 1.5fr 1fr;
 	grid-template-columns: 3fr 1fr;
 
@@ -33,6 +35,7 @@
 	&__link {
 		.MuiSvgIcon-root {
 			font-size: 3rem;
+			display: inline-block;
 			color: $github-dark;
 			filter: drop-shadow($shadow-mini);
 		}
@@ -50,5 +53,10 @@
 			border-radius: 20px;
 			border: 2px solid $dark-grey;
 		}
+	}
+
+	&:hover {
+		box-shadow: 0 0.8rem 1rem rgba($purple, 0.85);
+		transform: translateY(-0.75rem);
 	}
 }

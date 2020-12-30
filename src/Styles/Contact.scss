@@ -30,7 +30,7 @@
 	&__item .MuiSvgIcon-root:hover {
 		opacity: 1;
 		transform: translateY(-3px);
-		filter: drop-shadow($shadow-subtle);
+		filter: drop-shadow($shadow-mini);
 	}
 
 	&__item--1 .MuiSvgIcon-root:hover {
