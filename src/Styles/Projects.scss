@@ -14,12 +14,12 @@
 	background-color: $trans-white;
 	border-radius: 3px;
 	padding: 2rem;
+	width: 50vw;
 	margin: 2rem;
-	font-size: 1.6rem;
 	box-shadow: $shadow-subtle;
 	display: grid;
 	grid-template-rows: 1.5fr 1fr;
-	grid-template-columns: 5fr 1fr;
+	grid-template-columns: 3fr 1fr;
 
 	&__title {
 		font-size: 2.5rem;
@@ -34,7 +34,7 @@
 		.MuiSvgIcon-root {
 			font-size: 3rem;
 			color: $github-dark;
-			filter: drop-shadow($shadow-subtle);
+			filter: drop-shadow($shadow-mini);
 		}
 	}
 
@@ -42,9 +42,13 @@
 		grid-row: 2/3;
 		display: flex;
 		color: $dark-grey;
+		font-size: 1.4rem;
 
 		&-item {
-			padding-right: 1rem;
+			padding: 0.5rem 1rem;
+			margin-right: 1rem;
+			border-radius: 20px;
+			border: 2px solid $dark-grey;
 		}
 	}
 }
