@@ -9,10 +9,10 @@
 	background-image: linear-gradient(
 			to right,
 			rgba($white, 0.75) 0%,
-			rgba($white, 0.75) 60%,
-			transparent 60%
+			rgba($white, 0.75) 75%,
+			transparent 75%
 		),
-		url("https://images.unsplash.com/photo-1459478309853-2c33a60058e7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+		url("https://images.unsplash.com/photo-1516464278939-6c47180c46eb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
 	border-radius: 4px;
 	overflow: hidden;
 	min-height: 80vh;
@@ -21,7 +21,8 @@
 	box-shadow: $shadow-subtle;
 
 	&__left {
-		flex: 0.6;
+		flex: 0.75;
+		padding-bottom: 3rem;
 		&--header {
 			font-size: 4rem;
 			color: $github-dark;
@@ -35,15 +36,18 @@
 			animation-fill-mode: both;
 			padding: 1rem;
 			animation: ascend 0.6s ease-out;
+			animation-fill-mode: backwards;
 
-			&:last-child {
+			&:nth-child(4) {
+				animation-delay: 1s;
+			}
+			&:nth-child(3) {
 				animation-delay: 0.5s;
-				animation-fill-mode: backwards;
 			}
 		}
 	}
 	&__right {
-		flex: 0.4;
+		flex: 0.25;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -64,7 +68,7 @@
 			transform: scale(1.5);
 		}
 		.name {
-			font-size: 7rem;
+			font-size: 6rem;
 			text-shadow: $shadow-heavy;
 			animation-fill-mode: both;
 			color: $white;
