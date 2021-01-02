@@ -11,25 +11,23 @@ const About = () => {
 					<p className="about__left--content">
 						Born and brought up in Pondicherry, a small Union territory in South
 						India which was once a french colony. I made my schooling at Petit
-						Seminaire Higher Secondary School. My childood wasn't super
-						entertaining and so I decided to make it so. I used to do a lot of
-						mono-acting and fun-making, or shall I put it like this, "I tried
-						them". I was a PCMB student, that's what they call us. Biology was
-						something that always hindered me from excellence. So I fell into
-						the 'above-average' group. We like calling ourselves like that xD.
+						Seminaire Higher Secondary School. I was a PCMB student, that's what
+						they call us. Biology was something that always hindered me from
+						excellence. So I fell into the 'above-average' group. We like
+						calling ourselves like that xD. As it turned out, I chose what 90%
+						of higher secondary graduates choose. <strong>B. Tech.</strong>
 					</p>
 					<p className="about__left--content">
-						As it turned out, I chose what 90% of higher secondary graduates
-						choose. <strong>B. Tech.</strong> Maybe I felt like Electrostatics
-						and Electromagnetism were too easy in schooling so I went with EEE.
-						My frnds and seniors warned me about the department I was going to
-						get into, the following year. At first, I thought it was just them
-						messing around with me. Obviously, they weren't. Otherwise, I won't
-						be studying CSS and JavaScript in my final year. God I hated my
-						department. But college had another side. The hostel life side.
-						Basketball, movie watching, messing around with your seniors and
-						juniors, and other such things the day scholars never get to
-						experience in their entire life, (no offense intended).
+						Maybe I felt like Electrostatics and Electromagnetism were too easy
+						in schooling so I went with EEE. My frnds and seniors warned me
+						about the department I was going to get into, the following year. At
+						first, I thought it was just them messing around with me. Obviously,
+						they weren't. Otherwise, I won't be studying CSS and JavaScript in
+						my final year. God I hated my department. But college had another
+						side. The hostel life side. Basketball, movie watching, messing
+						around with your seniors and juniors, and other such things the day
+						scholars never get to experience in their entire life, (no offense
+						intended).
 					</p>
 					<p className="about__left--content">
 						I was in my 6th semester on feb 2020 trying to take up my attendence
