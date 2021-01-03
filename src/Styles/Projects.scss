@@ -20,17 +20,30 @@
 	box-shadow: $shadow-subtle;
 	display: grid;
 	transition: all 0.2s ease-in;
-	grid-template-rows: 1.5fr 1fr;
+	grid-template-rows: max-content max-content;
+	grid-row-gap: 2rem;
 	grid-template-columns: 3fr 1fr;
+	@media only screen and (max-width: $bp-large) {
+		width: 75vw;
+	}
+	@media only screen and (max-width: $bp-medium) {
+		width: 95vw;
+	}
 
 	&__title {
 		font-size: 2.5rem;
 		font-weight: 700;
 		grid-row: 1/2;
+		@media only screen and (max-width: $bp-medium) {
+			font-size: 2rem;
+		}
 	}
 	&__domain {
 		grid-row: 1/2;
 		font-size: 2rem;
+		@media only screen and (max-width: $bp-medium) {
+			font-size: 1.6rem;
+		}
 	}
 	&__link {
 		.MuiSvgIcon-root {
@@ -46,10 +59,16 @@
 		display: flex;
 		color: $dark-grey;
 		font-size: 1.4rem;
+		align-self: center;
+		@media only screen and (max-width: $bp-small) {
+			flex-wrap: wrap;
+			font-size: 1.2rem;
+		}
 
 		&-item {
 			padding: 0.5rem 1rem;
 			margin-right: 1rem;
+			margin-bottom: 1rem;
 			border-radius: 20px;
 			border: 2px solid $dark-grey;
 		}

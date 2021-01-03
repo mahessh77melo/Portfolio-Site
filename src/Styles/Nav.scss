@@ -10,6 +10,9 @@
 	box-shadow: $shadow-subtle;
 	border-radius: 3rem;
 	padding-right: 4.5rem;
+	@media only screen and (max-width: $bp-small) {
+		margin-top: 3rem;
+	}
 	&:hover {
 		width: 100%;
 	}
@@ -21,10 +24,20 @@
 		cursor: pointer;
 		transition: all 0.2s ease-in;
 		border-radius: 3rem;
-		&:hover {
-			color: $github-dark;
-			background-color: $light-grey;
-			transform: translateY(-3px);
+		@media only screen and (max-width: $bp-medium) {
+			font-size: 2rem;
+			padding: 1rem 2rem;
+		}
+		@media only screen and (max-width: $bp-small) {
+			font-size: 1.6rem;
+			padding: 1rem 1.25rem;
+		}
+		@media (hover: hover) {
+			&:hover {
+				color: $github-dark;
+				background-color: $light-grey;
+				transform: translateY(-3px);
+			}
 		}
 	}
 }
@@ -51,9 +64,18 @@
 	background-color: $light-grey;
 	padding: 1rem;
 	cursor: pointer;
+	@media only screen and (max-width: $bp-small) {
+		margin-top: 1rem;
+	}
 
 	svg.MuiSvgIcon-root {
 		display: inline-block;
 		font-size: 3rem;
+		@media only screen and (max-width: $bp-medium) {
+			font-size: 2.5rem;
+		}
+		@media only screen and (max-width: $bp-small) {
+			font-size: 2rem;
+		}
 	}
 }

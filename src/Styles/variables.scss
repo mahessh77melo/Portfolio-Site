@@ -16,3 +16,9 @@ $trans-white: rgba(255, 255, 255, 0.75);
 $shadow-subtle: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.6);
 $shadow-heavy: 0 0.6rem 1rem rgba(0, 0, 0, 0.85);
 $shadow-mini: 0 0.2rem 0.25rem rgba(0, 0, 0, 0.75);
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em; // 600px;

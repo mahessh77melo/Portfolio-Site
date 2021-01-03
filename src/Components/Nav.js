@@ -22,9 +22,6 @@ const Nav = () => {
 					<Link to="/projects" style={linkStyle}>
 						<div className="nav__item">Projects</div>
 					</Link>
-					<Link to="/interests" style={linkStyle}>
-						<div className="nav__item">Interests</div>
-					</Link>
 					<div
 						className="nav__item"
 						onClick={() => setContactView((prev) => !prev)}

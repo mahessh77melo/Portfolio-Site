@@ -13,12 +13,23 @@
 	box-shadow: $shadow-subtle;
 	border-radius: 3px;
 	opacity: 0.8;
+	@media (hover: none) {
+		z-index: 2;
+	}
 
 	&__item {
 		padding: 0.75rem;
 		margin: 1rem;
 		position: relative;
 		text-decoration: none;
+		@media only screen and (max-width: $bp-medium) {
+			padding: 0.5rem;
+			margin: 0.5rem;
+		}
+		@media only screen and (max-width: $bp-small) {
+			padding: 0.5rem;
+			margin: 0.5rem;
+		}
 	}
 
 	&__item .MuiSvgIcon-root {
@@ -26,32 +37,61 @@
 		transition: all 0.2s cubic-bezier(0.92, 1.06, 0.31, 1.84);
 		color: $purple;
 		cursor: pointer;
+		@media only screen and (max-width: $bp-medium) {
+			font-size: 3rem;
+		}
+		@media only screen and (max-width: $bp-small) {
+			font-size: 2.5rem;
+		}
 	}
 	&__item .MuiSvgIcon-root:hover {
 		opacity: 1;
 		transform: translateY(-3px);
 		filter: drop-shadow($shadow-mini);
 	}
+	@media (hover: hover) {
+		&__item--1 .MuiSvgIcon-root:hover {
+			color: $orange;
+		}
+		&__item--2 .MuiSvgIcon-root:hover {
+			color: $github-dark;
+		}
+		&__item--3 .MuiSvgIcon-root:hover {
+			color: $insta-pink;
+		}
+		&__item--4 .MuiSvgIcon-root:hover {
+			color: $twitter-blue;
+		}
+		&__item--6 .MuiSvgIcon-root:hover {
+			color: $linkedin-blue;
+		}
 
-	&__item--1 .MuiSvgIcon-root:hover {
-		color: $orange;
+		&__item .MuiSvgIcon-root:hover + &__item-overlay {
+			display: block;
+		}
 	}
-	&__item--2 .MuiSvgIcon-root:hover {
-		color: $github-dark;
-	}
-	&__item--3 .MuiSvgIcon-root:hover {
-		color: $insta-pink;
-	}
-	&__item--4 .MuiSvgIcon-root:hover {
-		color: $twitter-blue;
-	}
-	&__item--6 .MuiSvgIcon-root:hover {
-		color: $linkedin-blue;
+	@media (hover: none) {
+		&__item--1 .MuiSvgIcon-root {
+			color: $orange;
+		}
+		&__item--2 .MuiSvgIcon-root {
+			color: $github-dark;
+		}
+		&__item--3 .MuiSvgIcon-root {
+			color: $insta-pink;
+		}
+		&__item--4 .MuiSvgIcon-root {
+			color: $twitter-blue;
+		}
+		&__item--6 .MuiSvgIcon-root {
+			color: $linkedin-blue;
+		}
+
+		&__item .MuiSvgIcon-root:hover + &__item-overlay {
+			display: block;
+		}
 	}
 
-	&__item .MuiSvgIcon-root:hover + &__item-overlay {
-		display: block;
-	}
 	&__item--5 img:hover + &__item-overlay {
 		display: block;
 	}
@@ -82,6 +122,10 @@
 		padding: 0.75rem 1.25rem;
 		border-radius: 3px;
 		filter: drop-shadow($shadow-heavy);
+		@media only screen and (max-width: $bp-medium) {
+			font-size: 1.2rem;
+			padding: 0.25rem 0.75rem;
+		}
 
 		.triangle {
 			padding: 0.6rem;

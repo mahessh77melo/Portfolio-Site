@@ -24,8 +24,8 @@ const About = () => {
 						first, I thought it was just them messing around with me. Obviously,
 						they weren't. Otherwise, I won't be studying CSS and JavaScript in
 						my final year. God I hated my department. But college had another
-						side. The hostel life side. Basketball, movie watching, messing
-						around with your seniors and juniors, and other such things the day
+						side. "H.O.S.T.E.L" . Basketball, movie watching, messing around
+						with your seniors and juniors, and other such things the day
 						scholars never get to experience in their entire life, (no offense
 						intended).
 					</p>

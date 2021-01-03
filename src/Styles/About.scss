@@ -1,9 +1,12 @@
 @import "variables";
 @import "animations";
 .about-container {
-	padding: 5rem;
+	padding: 2rem;
 	box-sizing: content-box;
 	overflow: hidden;
+	@media only screen and (max-width: $bp-medium) {
+		padding: 0;
+	}
 }
 .about {
 	background-image: linear-gradient(
@@ -19,16 +22,46 @@
 	background-size: cover;
 	display: flex;
 	box-shadow: $shadow-subtle;
+	@media only screen and (max-width: $bp-medium) {
+		background-image: linear-gradient(
+				to right,
+				rgba($white, 0.75) 0%,
+				rgba($white, 0.75) 65%,
+				transparent 65%
+			),
+			url("https://images.unsplash.com/photo-1516464278939-6c47180c46eb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+	}
+	@media only screen and (max-width: $bp-small) {
+		background-image: linear-gradient(
+				to right,
+				rgba($white, 0.45) 0%,
+				rgba($white, 0.45) 100%
+			),
+			url("https://images.unsplash.com/photo-1516464278939-6c47180c46eb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+	}
 
 	&__left {
 		flex: 0.75;
 		padding-bottom: 3rem;
+		@media only screen and (max-width: $bp-medium) {
+			flex: 0.65;
+			padding-bottom: 2rem;
+		}
+		@media only screen and (max-width: $bp-small) {
+			flex: 1;
+		}
 		&--header {
 			font-size: 4rem;
 			color: $github-dark;
 			padding: 2rem;
 			animation-fill-mode: both;
 			animation: descend 0.5s ease-in;
+			@media only screen and (max-width: $bp-medium) {
+				font-size: 3rem;
+			}
+			@media only screen and (max-width: $bp-small) {
+				font-size: 2.5rem;
+			}
 		}
 		&--content {
 			font-size: 1.8rem;
@@ -37,6 +70,14 @@
 			padding: 1rem;
 			animation: ascend 0.6s ease-out;
 			animation-fill-mode: backwards;
+			@media only screen and (max-width: $bp-medium) {
+				font-size: 1.6rem;
+			}
+			@media only screen and (max-width: $bp-small) {
+				font-size: 1.4rem;
+				padding: 0.5rem;
+				color: $github-dark;
+			}
 
 			&:nth-child(4) {
 				animation-delay: 1s;
@@ -52,6 +93,9 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		@media only screen and (max-width: $bp-small) {
+			justify-content: flex-start;
+		}
 
 		.MuiAvatar-root {
 			height: 25rem;
@@ -60,6 +104,22 @@
 			animation-fill-mode: both;
 			filter: drop-shadow($shadow-heavy);
 			animation: fadeInFromLeft 0.6s ease-in;
+			@media only screen and (max-width: $bp-large) {
+				font-size: 3.5rem;
+				height: 20rem;
+				width: 20rem;
+			}
+			@media only screen and (max-width: $bp-medium) {
+				font-size: 3rem;
+				height: 17rem;
+				width: 17rem;
+				align-self: center;
+			}
+			@media only screen and (max-width: $bp-small) {
+				font-size: 2.5rem;
+				height: 13rem;
+				width: 13rem;
+			}
 		}
 		.MuiAvatar-img {
 			object-fit: cover;
@@ -73,6 +133,16 @@
 			animation-fill-mode: both;
 			color: $white;
 			animation: fadeInFromRight 0.6s ease-in;
+			@media only screen and (max-width: $bp-large) {
+				font-size: 4rem;
+			}
+			@media only screen and (max-width: $bp-medium) {
+				font-size: 3rem;
+				text-shadow: $shadow-subtle;
+			}
+			@media only screen and (max-width: $bp-small) {
+				font-size: 2.5rem;
+			}
 		}
 	}
 }

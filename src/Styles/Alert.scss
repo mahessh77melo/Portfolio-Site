@@ -16,6 +16,9 @@
 	&__text {
 		font-size: 1.8rem;
 		padding: 0 1rem;
+		@media only screen and (max-width: $bp-medium) {
+			font-size: 1.4rem;
+		}
 	}
 	&__exit {
 		font-size: 1.8rem;
