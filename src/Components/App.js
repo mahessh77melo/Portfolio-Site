@@ -3,7 +3,6 @@ import "../Styles/App.scss";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Projects from "./Projects";
 import About from "./About";
-import Interests from "./Interests";
 
 function App() {
 	return (
@@ -17,9 +16,6 @@ function App() {
 				</Route>
 				<Route path="/about" exact>
 					<About />
-				</Route>
-				<Route path="/interests" exact>
-					<Interests />
 				</Route>
 			</Router>
 		</div>
