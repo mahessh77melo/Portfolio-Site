@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/About.scss";
 import Avatar from "@material-ui/core/Avatar";
+import Nav from "./Nav";
 
 const About = () => {
 	return (
@@ -49,6 +50,7 @@ const About = () => {
 					</p>
 				</div>
 				<div className="about__right">
+					<Nav />
 					<Avatar
 						className="about__right--pic"
 						// google profile pic

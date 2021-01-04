@@ -1,10 +1,12 @@
 import React from "react";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import "../Styles/Projects.scss";
+import Nav from "./Nav";
 
 const Projects = () => {
 	return (
 		<div className="projects">
+			<Nav />
 			{/* Hulu clone */}
 			<div className="project">
 				<div className="project__title">Hulu Clone</div>
