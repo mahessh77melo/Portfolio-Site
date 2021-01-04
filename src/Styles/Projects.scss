@@ -23,6 +23,9 @@
 	grid-template-rows: max-content max-content;
 	grid-row-gap: 2rem;
 	grid-template-columns: 3fr 1fr;
+	@media only screen and (max-width: $bp-largest) {
+		width: 60vw;
+	}
 	@media only screen and (max-width: $bp-large) {
 		width: 75vw;
 	}

@@ -7,15 +7,17 @@ const About = () => {
 		<div className="about-container">
 			<div className="about">
 				<div className="about__left">
-					<h1 className="about__left--header">About Me</h1>
+					<h1 className="about__left--header">
+						About <span>(random BS about myself)</span>{" "}
+					</h1>
 					<p className="about__left--content">
 						Born and brought up in Pondicherry, a small Union territory in South
-						India which was once a french colony. I made my schooling at Petit
-						Seminaire Higher Secondary School. I was a PCMB student, that's what
-						they call us. Biology was something that always hindered me from
-						excellence. So I fell into the 'above-average' group. We like
-						calling ourselves like that xD. As it turned out, I chose what 90%
-						of higher secondary graduates choose. <strong>B. Tech.</strong>
+						India. I made my schooling at Petit Seminaire Higher Secondary
+						School as a PCMB student, that's what they call us. Biology was
+						something that always hindered me from excellence. So I fell into
+						the 'above-average' group. We like calling ourselves that xD. As it
+						turned out, I chose what 90% of higher secondary graduates choose.{" "}
+						<strong>B. Tech.</strong>
 					</p>
 					<p className="about__left--content">
 						Maybe I felt like Electrostatics and Electromagnetism were too easy
@@ -37,9 +39,13 @@ const About = () => {
 						time). Python led me to pandas, and then basic ML and then for
 						whatever reason, I started studying Django. Can't say I learnt
 						Django the way my Udemy instructor wanted me to, but dude!!! Web dev
-						was awesome! I had a Udemy streak for a 4 month span between which I
-						got placed too. Lockdown changed me a lot. And Bro! thanks for
-						reading this far. Maybe we can be frnds, if we already aren't.
+						was awesome! I had a 150 day Udemy streak between which I got placed
+						too. And then I started exploring various JavaScript libraries and
+						frameworks like React, Node js, Express, Mongoose and even graphQL.
+						Lockdown changed me a lot. I don't really know what drove me this
+						far, but I hope that same <strong>F = M*a</strong> drives you too.
+						And Bro! thanks for reading this far. Maybe we can be frnds, if we
+						already aren't.
 					</p>
 				</div>
 				<div className="about__right">
