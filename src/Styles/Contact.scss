@@ -33,7 +33,7 @@
 	}
 
 	&__item .MuiSvgIcon-root {
-		font-size: 4rem;
+		font-size: 3.5rem;
 		transition: all 0.2s cubic-bezier(0.92, 1.06, 0.31, 1.84);
 		color: $purple;
 		cursor: pointer;
@@ -65,6 +65,9 @@
 		&__item--6 .MuiSvgIcon-root:hover {
 			color: $linkedin-blue;
 		}
+		&__item--7 .MuiSvgIcon-root:hover {
+			color: $light-red;
+		}
 
 		&__item .MuiSvgIcon-root:hover + &__item-overlay {
 			display: block;
@@ -85,6 +88,9 @@
 		}
 		&__item--6 .MuiSvgIcon-root {
 			color: $linkedin-blue;
+		}
+		&__item--7 .MuiSvgIcon-root {
+			color: $light-red;
 		}
 
 		&__item .MuiSvgIcon-root:hover + &__item-overlay {
@@ -113,7 +119,7 @@
 		display: none;
 		animation: dashOut 0.3s cubic-bezier(0.92, 1.06, 0.31, 1.84);
 		top: 50%;
-		left: -16rem;
+		left: -20rem;
 		transform: translateY(-50%);
 		color: $white;
 		font-size: 1.5rem;
@@ -125,6 +131,7 @@
 		@media only screen and (max-width: $bp-medium) {
 			font-size: 1.2rem;
 			padding: 0.25rem 0.75rem;
+			left: -15rem;
 		}
 
 		.triangle {

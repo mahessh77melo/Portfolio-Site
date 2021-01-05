@@ -4,6 +4,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import DescriptionIcon from "@material-ui/icons/Description";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import ContactMailIcon from "@material-ui/icons/ContactMail";
 import "../Styles/Contact.scss";
 import Alert from "./Alert";
 
@@ -86,6 +87,16 @@ const Contact = () => {
 				/>
 				<div className="contacts__item-overlay contacts__item-overlay-5">
 					kingJames#2472
+					<span className="triangle"></span>
+				</div>
+			</div>
+			<div
+				onClick={(e) => copyToClipboard(e.target.closest(".contacts__item"))}
+				className="contacts__item contacts__item--7"
+			>
+				<ContactMailIcon />
+				<div className="contacts__item-overlay contacts__item-overlay-3">
+					magesh.lbj23@gmail.com
 					<span className="triangle"></span>
 				</div>
 			</div>
