@@ -1,5 +1,6 @@
 import React from "react";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import WebIcon from "@material-ui/icons/Web";
 import "../Styles/Projects.scss";
 import Nav from "./Nav";
 
@@ -16,12 +17,20 @@ const Projects = () => {
 					<div className="project__tools-item">TMDB api</div>
 					<div className="project__tools-item">React Router</div>
 				</div>
-				<a
-					href="https://github.com/mahessh77melo/hulu-clone"
-					className="project__link"
-				>
-					<GitHubIcon />
-				</a>
+				<div className="project__links">
+					<a
+						href="https://github.com/mahessh77melo/hulu-clone"
+						className="project__link"
+					>
+						<GitHubIcon />
+					</a>
+					<a
+						href="https://hulu-clone-f9922.web.app/"
+						className="project__link link-web"
+					>
+						<WebIcon />
+					</a>
+				</div>
 			</div>
 			{/* Discord messenger clone */}
 			<div className="project">
@@ -32,12 +41,20 @@ const Projects = () => {
 					<div className="project__tools-item">Google auth</div>
 					<div className="project__tools-item">Firebase realtime db</div>
 				</div>
-				<a
-					href="https://github.com/mahessh77melo/DiscordClone"
-					className="project__link"
-				>
-					<GitHubIcon />
-				</a>
+				<div className="project__links">
+					<a
+						href="https://github.com/mahessh77melo/DiscordClone"
+						className="project__link"
+					>
+						<GitHubIcon />
+					</a>
+					<a
+						href="https://discord-react-d789f.web.app/"
+						className="project__link link-web"
+					>
+						<WebIcon />
+					</a>
+				</div>
 			</div>
 			{/* Discord bot */}
 			<div className="project">

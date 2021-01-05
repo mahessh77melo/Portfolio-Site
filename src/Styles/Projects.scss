@@ -51,9 +51,18 @@
 	&__link {
 		.MuiSvgIcon-root {
 			font-size: 3rem;
+			margin: 1rem;
 			display: inline-block;
 			color: $github-dark;
 			filter: drop-shadow($shadow-mini);
+		}
+	}
+	&__links {
+		display: flex;
+		align-items: space-around;
+		justify-content: flex-start;
+		.link-web .MuiSvgIcon-root {
+			color: $purple;
 		}
 	}
 
