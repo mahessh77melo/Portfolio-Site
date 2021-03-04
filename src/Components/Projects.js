@@ -71,6 +71,50 @@ const Projects = () => {
 					<GitHubIcon />
 				</a>
 			</div>
+			{/* Forkify */}
+			<div className="project">
+				<div className="project__title">Forkify</div>
+				<div className="project__domain">Web Dev</div>
+				<div className="project__tools">
+					<div className="project__tools-item">JavaScript</div>
+					<div className="project__tools-item">AJAX</div>
+					<div className="project__tools-item">Parcel</div>
+				</div>
+				<div className="project__links">
+					<a
+						href="https://github.com/mahessh77melo/forkify-mahesh/tree/master/18-forkify/starter"
+						className="project__link"
+					>
+						<GitHubIcon />
+					</a>
+					<a
+						href="https://forkify-by-walter-white.netlify.app/"
+						className="project__link link-web"
+					>
+						<WebIcon />
+					</a>
+				</div>
+			</div>
+			{/* JS behind the scenes */}
+			<div className="project">
+				<div className="project__title">JS behind the scenes</div>
+				<div className="project__domain">Markdown</div>
+				<div className="project__tools">
+					<div className="project__tools-item">JavaScript</div>
+					<div className="project__tools-item">AJAX</div>
+					<div className="project__tools-item">OOP</div>
+					<div className="project__tools-item">JS engines</div>
+					<div className="project__tools-item">ESnext</div>
+				</div>
+				<div className="project__links">
+					<a
+						href="https://github.com/mahessh77melo/JS-behind-the-scenes"
+						className="project__link"
+					>
+						<GitHubIcon />
+					</a>
+				</div>
+			</div>
 			{/* Doctor.com */}
 			<div className="project">
 				<div className="project__title">Doctor.com</div>
