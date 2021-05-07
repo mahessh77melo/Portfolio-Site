@@ -56,6 +56,34 @@ const Projects = () => {
 					</a>
 				</div>
 			</div>
+			{/* Battery Management System */}
+			<div className="project">
+				<div className="project__title">Battery Management System</div>
+				<div className="project__domain">Full Stack</div>
+				<div className="project__tools">
+					<div className="project__tools-item">Leaflet</div>
+					<div className="project__tools-item">Chart.js</div>
+					<div className="project__tools-item">MongoDB</div>
+					<div className="project__tools-item">Parcel</div>
+					<div className="project__tools-item">SCSS</div>
+					<div className="project__tools-item">Node</div>
+					<div className="project__tools-item">Express</div>
+				</div>
+				<div className="project__links">
+					<a
+						href="https://github.com/mahessh77melo/BMS-ui-web"
+						className="project__link"
+					>
+						<GitHubIcon />
+					</a>
+					<a
+						href="https://battery-management-system.herokuapp.com/"
+						className="project__link link-web"
+					>
+						<WebIcon />
+					</a>
+				</div>
+			</div>
 			{/* Discord bot */}
 			<div className="project">
 				<div className="project__title">The Movie Nerd</div>
