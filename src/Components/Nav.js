@@ -16,6 +16,9 @@ const Nav = () => {
 		<div className="nav-container">
 			{showNav ? (
 				<div className="nav">
+					<Link to="/" style={linkStyle}>
+						<div className="nav__item">Home</div>
+					</Link>
 					<Link to="/about" style={linkStyle}>
 						<div className="nav__item">About</div>
 					</Link>
