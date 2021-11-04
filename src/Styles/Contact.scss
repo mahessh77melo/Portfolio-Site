@@ -19,7 +19,7 @@
 
 	&__item {
 		padding: 0.75rem;
-		margin: 1rem;
+		margin: 0.5rem;
 		position: relative;
 		text-decoration: none;
 		@media only screen and (max-width: $bp-medium) {
@@ -102,15 +102,27 @@
 		display: block;
 	}
 
+	&__item--8 img:hover + &__item-overlay {
+		display: block;
+	}
+
 	&__item img {
 		filter: invert(10%) sepia(89%) saturate(5825%) hue-rotate(279deg)
 			brightness(76%) contrast(112%);
 		cursor: pointer;
+		height: 3.5rem;
+		width: auto;
 	}
 	&__item img:hover {
 		transition: all 0.2s;
 		filter: invert(16%) sepia(7%) saturate(588%) hue-rotate(174deg)
 			brightness(100%) contrast(93%) drop-shadow($shadow-subtle);
+		transform: translateY(-3px);
+	}
+	&__item--8 img:hover {
+		transition: all 0.2s;
+		filter: brightness(0) saturate(100%) invert(25%) sepia(19%) saturate(1097%)
+			hue-rotate(164deg) brightness(95%) contrast(94%);
 		transform: translateY(-3px);
 	}
 

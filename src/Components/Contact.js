@@ -82,11 +82,24 @@ const Contact = () => {
 				onClick={(e) => copyToClipboard(e.target.closest(".contacts__item"))}
 			>
 				<img
-					src="https://discord.com/assets/41484d92c876f76b20c7f746221e8151.svg"
+					src="https://img.icons8.com/ios/344/discord-logo.png"
 					alt="Discord"
 				/>
 				<div className="contacts__item-overlay contacts__item-overlay-5">
-					kingJames#2472
+					WalterWhite#2472
+					<span className="triangle"></span>
+				</div>
+			</div>
+			<div
+				className="contacts__item contacts__item--8"
+				onClick={(e) => copyToClipboard(e.target.closest(".contacts__item"))}
+			>
+				<img
+					src="https://cdn.iconscout.com/icon/free/png-256/steam-2288551-1933796.png"
+					alt="Steam"
+				/>
+				<div className="contacts__item-overlay contacts__item-overlay-8">
+					1174204140
 					<span className="triangle"></span>
 				</div>
 			</div>
