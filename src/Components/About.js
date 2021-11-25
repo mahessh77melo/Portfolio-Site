@@ -30,10 +30,11 @@ const About = () => {
 						my 6th semester on feb 2020 trying to take up my attendence to 80%.
 						We all know what's next. Let's skip the Covid part. Thank god!
 						Lockdown drove me into start learning Python, after two months of
-						Money heist and Better Call Saul. (Try these two is you find time).
-						Python led me to pandas, and then basic ML and then for whatever
-						reason, I started studying Django. Can't say I learnt Django the way
-						my Udemy instructor wanted me to, but dude!!! Web dev was awesome!
+						Peaky Blinders and Better Call Saul. (Try these two if you find
+						time). Python led me to pandas, and then basic ML and then for
+						whatever reason, I started studying Django. Can't say I learnt
+						Django the way my Udemy instructor wanted me to, but dude!!! Web dev
+						was awesome!
 					</p>
 					<p className="about__left--content">
 						I was in my 6th semester on feb 2020 trying to take up my attendence
