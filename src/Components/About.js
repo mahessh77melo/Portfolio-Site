@@ -28,31 +28,24 @@ const About = () => {
 						they weren't. Otherwise, I won't be studying CSS and JavaScript in
 						my final year. In college, I was a lot into sports and NBA. I was in
 						my 6th semester on feb 2020 trying to take up my attendence to 80%.
-						We all know what's next. Let's skip the Covid part. Thank god!
-						Lockdown drove me into start learning Python, after two months of
-						Peaky Blinders and Better Call Saul. (Try these two if you find
-						time). Python led me to pandas, and then basic ML and then for
+						And then Covid hit the world and everyone of us were sent to our
+						homes. Thank god! Lockdown drove me into start learning Python,
+						after two months of Peaky Blinders and Better Call Saul. (Try these
+						two if you find time). Python led me to pandas, and then for
 						whatever reason, I started studying Django. Can't say I learnt
 						Django the way my Udemy instructor wanted me to, but dude!!! Web dev
 						was awesome!
 					</p>
 					<p className="about__left--content">
-						I was in my 6th semester on feb 2020 trying to take up my attendence
-						to 80%. Then came this guy called "Covid". Thank god! Lockdown drove
-						me into start learning Python, after two months of Money heist and
-						Better Call Saul. (Try these two is you find time). Python led me to
-						pandas, and then basic ML and then for whatever reason, I started
-						studying Django. Can't say I learnt Django the way my Udemy
-						instructor wanted me to, but dude!!! Web dev was awesome! I had a
-						150 day Udemy streak during which I learnt a lot of JavaScript
-						(still learning) and SQL. And then I started exploring various
-						JavaScript libraries and frameworks like React, Node js, Express,
-						Mongoose and even graphQL. Lockdown changed me a lot. I don't really
-						know what drove me this far, but I hope that same{" "}
-						<strong>F = M*a</strong> drives you too. Right now I am starting my
-						career as a Salesforce Developer at one of the biggest consulting
-						firms, Deloitte USI. And Bro! thanks for reading this far. Maybe we
-						can be frnds, if we already aren't.
+						I had a 150 day Udemy streak during which I learnt a lot of
+						JavaScript (still learning) and SQL. And then I started exploring
+						various JavaScript libraries and frameworks like React, Node js,
+						Express, Mongoose and even graphQL. Lockdown changed me a lot. I
+						don't really know what drove me this far, but I hope that same{" "}
+						<strong>F = M*a</strong> drives you too. Right now I have one year
+						experience in Salesforce platform (mostly LWC) while working at
+						Deloitte USI. And Bro! thanks for reading this far. Maybe we can be
+						frnds, if we already aren't. P.S : I play Dota 20+ hrs a week.
 					</p>
 				</div>
 				<div className="about__right">

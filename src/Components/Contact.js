@@ -63,7 +63,7 @@ const Contact = () => {
 			>
 				<InstagramIcon />
 				<div className="contacts__item-overlay contacts__item-overlay-3">
-					@brutall_geek
+					@walter_white_308
 					<span className="triangle"></span>
 				</div>
 			</div>
