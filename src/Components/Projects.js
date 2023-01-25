@@ -56,6 +56,31 @@ const Projects = () => {
 					</a>
 				</div>
 			</div>
+			{/* Habit Tracker */}
+			<div className="project">
+				<div className="project__title">Habit Tracker</div>
+				<div className="project__domain">Web Dev</div>
+				<div className="project__tools">
+					<div className="project__tools-item">React JS</div>
+					<div className="project__tools-item">Redux</div>
+					<div className="project__tools-item">Material UI</div>
+					<div className="project__tools-item">Neumorphism</div>
+				</div>
+				<div className="project__links">
+					<a
+						href="https://github.com/mahessh77melo/habit-tracker"
+						className="project__link"
+					>
+						<GitHubIcon />
+					</a>
+					<a
+						href="https://walters-habit-tracker.netlify.app/"
+						className="project__link link-web"
+					>
+						<WebIcon />
+					</a>
+				</div>
+			</div>
 			{/* Battery Management System */}
 			<div className="project">
 				<div className="project__title">Battery Management System</div>
